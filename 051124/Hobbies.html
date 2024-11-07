@@ -1,16 +1,48 @@
 <!DOCTYPE html>
-<html lang="Es">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mis hobbies</title>
+    <style>
+        ul.custom-spacing li {
+            margin-bottom: 50px; /* Espaciado de 50px entre viñetas */
+        }
+        .image-container {
+            display: none; /* La imagen está oculta por defecto */
+        }
+        .list-item:hover {
+            cursor: pointer; /* Cambia el cursor al pasar sobre el texto de la viñeta */
+        }
+    </style>
 </head>
 <body>
     <h1>Mis pasatiempos son:</h1>
-    <ul>
-        <li>Escuchar música</li>
-        <li> Ver series o películas</li>
-        <li>ver cursos en youtube, prinicpalmente de diseño (web o grafico)</li>
+    <ul class="custom-spacing">
+        <li class="list-item" onclick="toggleImage('imagen1')">Escuchar música</li>
+        <div id="imagen1" class="image-container">
+            <img src="https://th.bing.com/th/id/OIP.F04bxE0Sx5f3HqD_Fpf1xQHaHa?rs=1&pid=ImgDetMain" alt="Portada del álbum MOTOMAMI" height="200" width="200" title="Motomami-Rosalía">
+        </div>
+        <li class="list-item" onclick="toggleImage('imagen2')">Ver series o películas</li>
+        <div id="imagen2" class="image-container">
+            <img src="https://about.netflix.com/images/meta/netflix-symbol-black.png" alt="Logo de Netflix" height="200" width="300" title="Netflix-plataforma de streaming">
+        </div>
+        <li class="list-item" onclick="toggleImage('imagen3')">Ver cursos en YouTube, principalmente de diseño (web o gráfico)</li>
+        <div id="imagen3" class="image-container">
+            <img src="https://th.bing.com/th/id/OIP.qcR2HWWGZfpCxlTilTfi_AAAAA?rs=1&pid=ImgDetMain" alt="Logo de youtube" height="200" width="300" title="Youtube-Plataforma de vídeos">
+        </div>
     </ul>
+
+    <script>
+        function toggleImage(id) {
+            var imgContainer = document.getElementById(id);
+            if (imgContainer.style.display === "none") {
+                imgContainer.style.display = "block";
+            } else {
+                imgContainer.style.display = "none";
+            }
+        }
+    </script>
 </body>
 </html>
+
