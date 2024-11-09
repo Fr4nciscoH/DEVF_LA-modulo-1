@@ -21,17 +21,37 @@
         <nav>
         <ul class="major-icons">
             <li><a href="#productos">Productos</a></span></li>
-            <li><a href="agendar">Agenda ya</a></li>
-            <li><a href="sucursales">Ubicación</a></li>
-            <li><a href="mi-cuenta">Mi cuenta</a></li>
+            <li><a href="#agendar">Agenda ya</a></li>
+            <li><a href="#sucursales">Ubicación</a></li>
+            <li><a href="#mi-cuenta">Mi cuenta</a></li>
     </ul>
     </nav>
-</div>
+</div><br><br><br>
 <section id="productos">
     <h2>La mejor calidad</h2>
     <p>lorem lorem lorem</p>
-    <!-- <img src="aquí va alguna foto de producto"alt="lorem ipsum" -->
-    <button type="button" onclick="alert('añadido al carrito')">Compra ya!</button>
+    <!-- <img src="aquí va alguna foto de producto"alt="lorem ipsum" --> <br>
+    <button type="button" onclick="alert('Añadido al carrito')">Compra ya!</button>
+</section> <br><br><br>
+<section id="agendar">
+    <h2>Agenda ya</h2>
+    <form>
+        <ul>
+            <li>
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="user_name"/>
+            </li><br>
+            <li>
+                <label for="mail">Correo electrónico:</label>
+                <input type="email" id="mail" name="user_mail"/>
+            </li><br>
+            <li>
+                <label for="date">Elige una fecha para tu cita:</label>
+                <input type="date" id="appointment-date" name="appoiment-date">
+                <input type="submit" value="Enviar">
+            </li><br>
+        </ul>
+    </form>
 </section>
 </body>
 </html>
