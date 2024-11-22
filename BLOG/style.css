@@ -11,6 +11,10 @@ header {
     color: white;
     padding: 10px 0;
     text-align: center;
+    letter-spacing: 10px;
+    <span style="margin-right: 20px;">Mi</span>
+    <span style="margin-right: 20px;">Tienda</span>
+    <span>En Línea</span>
 }
 
 footer {
